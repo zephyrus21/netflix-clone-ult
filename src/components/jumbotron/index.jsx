@@ -17,20 +17,26 @@ const Jumbotron = ({ children, direction = 'row', ...restProps }) => {
   );
 };
 
-Jumbotron.Conatiner = ({ children, ...restProps }) => {
+const JumbotronConatiner = ({ children, ...restProps }) => {
   return <Conatiner {...restProps}>{children}</Conatiner>;
 };
-Jumbotron.Pane = ({ children, ...restProps }) => {
+const JumbotronPane = ({ children, ...restProps }) => {
   return <Pane {...restProps}>{children}</Pane>;
 };
-Jumbotron.Title = ({ children, ...restProps }) => {
+const JumbotronTitle = ({ children, ...restProps }) => {
   return <Title {...restProps}>{children}</Title>;
 };
-Jumbotron.SubTitle = ({ children, ...restProps }) => {
+const JumbotronSubTitle = ({ children, ...restProps }) => {
   return <SubTitle {...restProps}>{children}</SubTitle>;
 };
-Jumbotron.Image = ({ ...restProps }) => {
+const JumbotronImage = ({ ...restProps }) => {
   return <Image {...restProps} />;
 };
+
+Jumbotron.Conatiner = JumbotronConatiner;
+Jumbotron.Pane = JumbotronPane;
+Jumbotron.Title = JumbotronTitle;
+Jumbotron.SubTitle = JumbotronSubTitle;
+Jumbotron.Image = JumbotronImage;
 
 export default Jumbotron;

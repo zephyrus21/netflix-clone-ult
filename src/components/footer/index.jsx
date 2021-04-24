@@ -13,28 +13,35 @@ const Footer = ({ children, ...restProps }) => {
   return <Conatiner {...restProps}>{children}</Conatiner>;
 };
 
-Footer.Row = ({ children, ...restProps }) => {
+const FooterRow = ({ children, ...restProps }) => {
   return <Row {...restProps}>{children}</Row>;
 };
 
-Footer.Column = ({ children, ...restProps }) => {
+const FooterColumn = ({ children, ...restProps }) => {
   return <Column {...restProps}>{children}</Column>;
 };
 
-Footer.Link = ({ children, ...restProps }) => {
+const FooterLink = ({ children, ...restProps }) => {
   return <Link {...restProps}>{children}</Link>;
 };
 
-Footer.Title = ({ children, ...restProps }) => {
+const FooterTitle = ({ children, ...restProps }) => {
   return <Title {...restProps}>{children}</Title>;
 };
 
-Footer.Text = ({ children, ...restProps }) => {
+const FooterText = ({ children, ...restProps }) => {
   return <Text {...restProps}>{children}</Text>;
 };
 
-Footer.Break = ({ children, ...restProps }) => {
+const FooterBreak = ({ children, ...restProps }) => {
   return <Break {...restProps}>{children}</Break>;
 };
+
+Footer.Row = FooterRow;
+Footer.Column = FooterColumn;
+Footer.Link = FooterLink;
+Footer.Title = FooterTitle;
+Footer.Text = FooterText;
+Footer.Break = FooterBreak;
 
 export default Footer;
