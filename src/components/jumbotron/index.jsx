@@ -1,6 +1,7 @@
 import React from 'react';
 import {
   Conatiner,
+  Item,
   Inner,
   Pane,
   Title,
@@ -9,7 +10,11 @@ import {
 } from './styles/jumbotron';
 
 const Jumbotron = ({ children, direction = 'row', ...restProps }) => {
-  return <Inner direction={direction}>{children}</Inner>;
+  return (
+    <Item direction={direction} {...restProps}>
+      <Inner>{children}</Inner>
+    </Item>
+  );
 };
 
 Jumbotron.Conatiner = ({ children, ...restProps }) => {
