@@ -4,3 +4,4 @@ export { default as Accordion } from './accordion';
 export { default as OptForm } from './opt-form';
 export { default as Footer } from './footer';
 export { default as Card } from './card';
+export { default as Feature } from './feature';
