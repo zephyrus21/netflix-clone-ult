@@ -18,7 +18,7 @@ const Signup = () => {
   const handleSignup = (event) => {
     event.preventDefault();
 
-    return firebaseApp
+    firebaseApp
       .auth()
       .createUserWithEmailAndPassword(emailAddress, password)
       .then((result) =>
