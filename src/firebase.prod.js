@@ -1,6 +1,8 @@
-import firebase from 'firebase';
+import Firebase from 'firebase/app';
+import 'firebase/firestore';
+import 'firebase/auth';
 
-const firebaseApp = firebase.initializeApp({
+const firebaseApp = Firebase.initializeApp({
     apiKey: 'AIzaSyABihI8lqz8l8lnOBYfBjDUPBgSBGlWVcY',
     authDomain: 'netflix-clone-p21.firebaseapp.com',
     projectId: 'netflix-clone-p21',

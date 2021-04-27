@@ -5,3 +5,4 @@ export { default as OptForm } from './opt-form';
 export { default as Footer } from './footer';
 export { default as Card } from './card';
 export { default as Feature } from './feature';
+export { default as Form } from './form';
