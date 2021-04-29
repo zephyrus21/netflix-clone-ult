@@ -1,5 +1,5 @@
 import React from 'react';
-import { Header, Profiles } from '../components';
+import { Header, Profile } from '../components';
 import * as ROUTES from '../constants/routes';
 
 const SelectProfileContainer = ({ user, setProfile }) => {
@@ -11,10 +11,10 @@ const SelectProfileContainer = ({ user, setProfile }) => {
         </Header.Frame>
       </Header>
 
-      <Profiles>
-        <Profiles.Title>Who's watching?</Profiles.Title>
-        <Profiles.List>
-          <Profiles.User
+      <Profile>
+        <Profile.Title>Who's watching?</Profile.Title>
+        <Profile.List>
+          <Profile.User
             onClick={() =>
               setProfile({
                 displayName: user.displayName,
@@ -22,11 +22,11 @@ const SelectProfileContainer = ({ user, setProfile }) => {
               })
             }
             data-testid='user-profile'>
-            <Profiles.Picture src={user.photoURL} />
-            <Profiles.Name>{user.displayName}</Profiles.Name>
-          </Profiles.User>
-        </Profiles.List>
-      </Profiles>
+            <Profile.Picture src={user.photoURL} />
+            <Profile.Name>{user.displayName}</Profile.Name>
+          </Profile.User>
+        </Profile.List>
+      </Profile>
     </>
   );
 };
