@@ -37,7 +37,7 @@ const BrowseContainer = ({ slides }) => {
     } else {
       setSlideRows(slides[category]);
     }
-  }, [searchTerm, slideRows, category, slides]);
+  }, [searchTerm]);
 
   return profile.displayName ? (
     <>
